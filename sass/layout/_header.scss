@@ -1,0 +1,53 @@
+.h-page {
+  background: $h-page-bg;
+  min-height: 50px;
+}
+
+.menu {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.menu-mobile {
+  border-bottom: 1px solid #000;
+  padding: 0 15px;
+}
+
+.menu-toggle {
+  float: right;
+  font-size: 1.5em;
+  margin-top: 13px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: $h-page-bg;
+  color: $menu-text-color;
+  
+  &:focus, &:hover {
+    background: #000;
+  }
+}
+
+.logo {
+  float: left;
+  margin: 5px 0 ;
+}
+
+.menu-nav {
+  display: none;
+  padding: 0 15px;
+  margin: 15px 0;
+
+  li {
+    a {
+      display: block;
+      font-size: 1em;
+      padding: 5px;
+      color: $menu-text-color;
+    }
+  }
+}
+
+.d-block {
+  display: block;
+}
+

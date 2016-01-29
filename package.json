@@ -1,0 +1,21 @@
+{
+  "name": "geekhub homeworks",
+  "version": "1.0.0",
+  "description": "JQuery",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sass",
+    "gulp",
+    "npm"
+  ],
+  "author": "thuhniy",
+  "license": "MIT"
+}

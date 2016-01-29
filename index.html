@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css">
+    <title>HW_JQuery Alex Trukhnii</title>
+</head>
+<body>
+    <header class="h-page">
+        <div class="container">
+            <nav class="menu">
+                <div class="menu-mobile clearfix">
+                    <button type="button" id="btn-toggle" class="menu-toggle">
+                    <span class="fa fa-bars"></span>
+                    </button>
+                    <h1 class="logo"><a href="index.html"><img src="img/logo.png" alt="Alex-Trukhnii"></a></h1>
+                </div>
+                <ul class="menu-nav" id="menu-nav-open">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#accordion">Accordion</a></li>
+                    <li><a href="#">Dialog</a></li>
+                    <li><a href="#">Tabs</a></li>
+                    <li><a href="#">Tooltip</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top" class="m-page">
+        <section id="accordion" class="accordion">
+            <div class="container">
+                <h2 class="section-header">Accordion</h2>
+
+                <h3 class="accord-header active" data-target="#section-1"><span class="caret"></span> Section 1</h3>
+                <div id="section-1" class="accord-text open">
+                    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                </div>
+                <h3 class="accord-header" data-target="#section-2"><span class="caret"></span> Section 2</h3>
+                <div id="section-2" class="accord-text">
+                    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                </div>
+                <h3 class="accord-header" data-target="#section-3"><span class="caret"></span> Section 3</h3>
+                <div id="section-3" class="accord-text">
+                    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                </div>
+                <h3 class="accord-header" data-target="#section-4"><span class="caret"></span> Section 4</h3>
+                <div id="section-4" class="accord-text">
+                    <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="f-page">
+        
+    </footer>
+
+</body>
+</html>

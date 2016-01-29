@@ -1,0 +1,18 @@
+body {
+  min-width: 320px;
+  font-size: 14px;
+  font-family: $main-font;
+  background: #fff;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.section-header {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 50px 0;
+}
