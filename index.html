@@ -11,17 +11,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script src="js/main.js"></script>
+
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/flexslider.css">
     <link rel="stylesheet" href="css/main.css">
     <title>HW_JQuery Alex Trukhnii</title>
 </head>
 <body>
     <header class="h-page">
         <div class="container">
-            <nav class="menu">
+            <nav class="menu clearfix">
                 <div class="menu-mobile clearfix">
                     <button type="button" id="btn-toggle" class="menu-toggle">
                     <span class="fa fa-bars"></span>
@@ -31,9 +32,11 @@
                 <ul class="menu-nav" id="menu-nav-open">
                     <li><a href="#top">Home</a></li>
                     <li><a href="#accordion">Accordion</a></li>
-                    <li><a href="#">Dialog</a></li>
-                    <li><a href="#">Tabs</a></li>
-                    <li><a href="#">Tooltip</a></li>
+                    <li><a href="#dialog">Dialog</a></li>
+                    <li><a href="#tabs">Tabs</a></li>
+                    <li><a href="#tooltips">Tooltip</a></li>
+                    <li><a href="#full-width-slider">Slider</a></li>
+                    <li><a href="#multi-slider">Carousel</a></li>
                 </ul>
             </nav>
         </div>
@@ -60,8 +63,114 @@
                 <div id="section-4" class="accord-text">
                     <p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
                 </div>
+            </div>
+        </section>
 
+        <section id="dialog" class="dialog">
+            <div class="container">
+                <h2 class="section-header">Pop Up Dialog</h2>
 
+                <button type="button" id="popup-pls" class="btn btn-primary">Pop up here :)</button>
+            </div>
+                <div id="popup" class="popup">
+                    <div class="popup-content">
+                        <h3 class="popup-header">This is popup dialog!</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias blanditiis distinctio eaque, earum expedita fuga in molestiae molestias nihil nostrum perspiciatis provident quasi qui quo ratione, recusandae repellat reprehenderit sed!</p>
+                        <button type="button" id="hide" class="btn btn-success">Hide</button>
+                    </div>
+                </div>
+        </section>
+
+        <section id="tabs" class="tabs">
+            <div class="container">
+                <h2 class="section-header">Tabs</h2>
+
+                <div class="labels">
+                    <span class="btn btn-default" data-tab-id="#tabs-1">Nunc tincidunt</span>
+                    <span class="btn btn-default" data-tab-id="#tabs-2">Proin dolor</span>
+                    <span class="btn btn-default" data-tab-id="#tabs-3">Aenean lacinia</span>
+                </div>
+
+                <div id="tabs-1" class="tab-content">
+                    <p>Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante. Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing. Duis orci. Aliquam sodales tortor vitae ipsum. Aliquam nulla. Duis aliquam molestie erat. Ut et mauris vel pede varius sollicitudin. Sed ut dolor nec orci tincidunt interdum. Phasellus ipsum. Nunc tristique tempus lectus.</p>
+                </div>
+                <div id="tabs-2" class="tab-content">
+                    <p>Morbi tincidunt, dui sit amet facilisis feugiat, odio metus gravida ante, ut pharetra massa metus id nunc. Duis scelerisque molestie turpis. Sed fringilla, massa eget luctus malesuada, metus eros molestie lectus, ut tempus eros massa ut dolor. Aenean aliquet fringilla sem. Suspendisse sed ligula in ligula suscipit aliquam. Praesent in eros vestibulum mi adipiscing adipiscing. Morbi facilisis. Curabitur ornare consequat nunc. Aenean vel metus. Ut posuere viverra nulla. Aliquam erat volutpat. Pellentesque convallis. Maecenas feugiat, tellus pellentesque pretium posuere, felis lorem euismod felis, eu ornare leo nisi vel felis. Mauris consectetur tortor et purus.</p>
+                </div>
+                <div id="tabs-3" class="tab-content">
+                    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+                    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tooltips" class="tooltips">
+            <div class="container">
+                <h2 class="section-header">ToolTip</h2>
+
+                <p>Lorem ipsum dolor sit amet, <a href="#" data-tt-title="That link lead nowhere! :)">Try tooltip here</a> consectetur adipisicing elit. Animi cum hic itaque labore non perferendis quam rem voluptate voluptatibus voluptatum. Dicta enim minima nihil. Explicabo itaque quae voluptatem? <a href="#" data-tt-title="Sorry! That link lead nowhere too! :D">Try another tooltip here</a> Cum, repellendus!</p>
+
+                <progress max="100" value="55" data-tt-title="'The progress is 55 percents!'"></progress>
+                <p>Hover the progress bar to see the tooltip.</p>
+
+                <div class="tt-box"></div>
+            </div>
+        </section>
+
+        <section id="full-width-slider" class="full-width-slider">
+            <div class="container">
+                <h2 class="section-header">Full width slider</h2>
+                <!-- Place somewhere in the <body> of your page -->
+                <div class="flexslider single">
+                    <ul class="slides">
+                        <li>
+                            <img src="img/slide1.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/slide2.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/slide3.jpg" />
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="multi-slider" class="multi-slider">
+            <div class="container">
+                <h2 class="section-header">Multi slider</h2>
+                <div class="flexslider carousel">
+                    <ul class="slides">
+                        <li>
+                            <img src="img/slide1.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/slide2.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/slide3.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/slide1.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/slide2.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/slide3.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/slide1.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/slide2.jpg" />
+                        </li>
+                        <li>
+                            <img src="img/slide3.jpg" />
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
@@ -69,6 +178,7 @@
     <footer class="f-page">
         
     </footer>
-
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

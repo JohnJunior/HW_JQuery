@@ -1,0 +1,31 @@
+.dialog {
+  background: $secondary-color-bg;
+  min-height: 200px;
+  text-align: center;
+
+  .container {
+    padding-bottom: 50px;
+  }
+}
+
+.popup {
+  display: none;
+  width: 100%;
+  min-height: 100%;
+  background: rgba(0,0,0,0.5);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+}
+
+.popup-content {
+  width: 400px;
+  height: 230px;
+  background: #fff;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}

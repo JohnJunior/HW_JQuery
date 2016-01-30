@@ -1,6 +1,11 @@
 .h-page {
   background: $h-page-bg;
   min-height: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 999;
 }
 
 .menu {
@@ -51,3 +56,22 @@
   display: block;
 }
 
+@include min-screen(768px) {
+  .menu-mobile {
+    width: 150px;
+    float: left;
+  }
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-nav {
+    display: block!important;
+    float: right;
+    cursor: pointer;
+
+    li {
+      display: inline-block;
+    }
+  }
+}

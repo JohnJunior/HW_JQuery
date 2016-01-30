@@ -1,5 +1,13 @@
 .accordion {
-  background: #dcdcdc;
+  background: $primary-color-bg;
+
+  .container {
+    padding-bottom: 50px;
+  }
+
+  .section-header {
+    margin-top: 100px;
+  }
 }
 
 .accord-header {

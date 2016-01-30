@@ -1,0 +1,19 @@
+.tooltips {
+  background: $secondary-color-bg;
+  min-height: 400px;
+
+  .container {
+    padding-bottom: 50px;
+  }
+}
+
+.tt-box {
+  display: none;
+  position: absolute;
+  z-index:999;
+  background-color:#dedede;
+  padding:5px;
+  border:1px solid #000;
+  border-radius: 5px;
+  max-width:250px;
+}
