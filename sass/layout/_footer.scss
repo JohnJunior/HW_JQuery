@@ -1,0 +1,50 @@
+.f-page {
+  background: $h-page-bg;
+  min-height: 50px;
+  text-align: center;
+}
+
+.created {
+  padding: 30px 0;
+  margin: 0;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+a.alex-truhniy {
+  color: #fff;
+  font-weight: 700;
+}
+
+.social {
+  margin-top: 20px;
+
+  .linkedin, .fb, .vk, .f-git {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #1883ba;
+    color: #fff;
+    font-size: 1.2em;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+    &:hover, &:focus {
+      opacity: 0.7;
+    }
+  }
+
+  .fb {
+    background: #4862a2;
+  }
+
+  .vk {
+    background: #54769a;
+  }
+
+  .f-git {
+    background: #8199a7;
+  }
+
+}
